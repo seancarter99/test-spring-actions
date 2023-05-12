@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Start JDK
-        uses: actions/setup0java@v1
+        uses: actions/setupjava@v1
         with:
           java-version: '8'
       - run: mvn clean install
