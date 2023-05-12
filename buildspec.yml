@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  build:
+    commands:
+    - cd ./auto-deploy
+    - mvn clean install
+  post_build:
+    commands:
+    - mv ./auto-deploy/target/auto-deploy-0.0.1-SNAPSHOT.jar ./auto-deploy-0.0.1-SNAPSHOT.jar
+artifacts:
+  files:
+    ./auto-deploy-0.0.1-SNAPSHOT.jar
