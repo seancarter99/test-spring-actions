@@ -1,5 +1,9 @@
 name: CI/CD Pipeline
 
+defaults:
+  run:
+    working-directory: auto-deploy
+
 on:
   push:
     branches: [main]
