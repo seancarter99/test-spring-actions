@@ -14,6 +14,7 @@ jobs:
         with:
           java-version: '8'
           distribution: 'temurin'
+      - run: cd auto-deploy
       - run: mvn clean install
       - run: mv target/auto-deploy-0.0.1-SNAPSHOT.jar auto-deploy-0.0.1-SNAPSHOT.jar
       - name: AWS Credentials
